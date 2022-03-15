@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/aasztokholm/static/css/main.073c9b0a.css",
+    "main.js": "/aasztokholm/static/js/main.9030aa7f.js",
+    "static/js/787.baf8b88c.chunk.js": "/aasztokholm/static/js/787.baf8b88c.chunk.js",
+    "static/media/logo.svg": "/aasztokholm/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/aasztokholm/index.html",
+    "main.073c9b0a.css.map": "/aasztokholm/static/css/main.073c9b0a.css.map",
+    "main.9030aa7f.js.map": "/aasztokholm/static/js/main.9030aa7f.js.map",
+    "787.baf8b88c.chunk.js.map": "/aasztokholm/static/js/787.baf8b88c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.9030aa7f.js"
+  ]
+}
