@@ -2,7 +2,7 @@ import { phone } from "../Images/Icons";
 import image from "../Images/lonely.png";
 import { CallMe, PhoneContainer, Title, ImageContainer, HeroContainer } from "./Hero.styled";
 
-export const Phone = ({ number }) => {
+export const Hero = ({ number }) => {
   return (
     <HeroContainer>
       <PhoneContainer>

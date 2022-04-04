@@ -12,7 +12,7 @@ export const traditions = <IoColorFilterOutline size={50} color="inherit" />;
 
 export const conceptions = <IoNewspaperOutline size={50} color="inherit" />;
 
-export const meeteng = <FaUsers size={50} color="inherit" />;
+export const meeting = <FaUsers size={50} color="inherit" />;
 
 export const history = <FaBook size={50} color="inherit" />;
 
