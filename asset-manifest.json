@@ -1,10 +1,12 @@
 {
   "files": {
-    "main.css": "/aasztokholm/static/css/main.9abc1065.css",
-    "main.js": "/aasztokholm/static/js/main.91d76ec0.js",
+    "main.css": "/aasztokholm/static/css/main.dba4dad3.css",
+    "main.js": "/aasztokholm/static/js/main.d13f97e5.js",
     "static/media/mountain.jpg": "/aasztokholm/static/media/mountain.cb23183910f22cab753e.jpg",
     "static/media/build.jpg": "/aasztokholm/static/media/build.9cf4799e3099add5cc13.jpg",
     "static/media/newspaper.jpg": "/aasztokholm/static/media/newspaper.f37d7db124ecead03c14.jpg",
+    "static/media/meeting.jpg": "/aasztokholm/static/media/meeting.2a99823c041e1932e26d.jpg",
+    "static/media/contact.jpg": "/aasztokholm/static/media/contact.a679fb8101df774bbef1.jpg",
     "static/media/tradition.jpg": "/aasztokholm/static/media/tradition.8b8c0e98eacb046720d2.jpg",
     "static/media/conceptions.jpg": "/aasztokholm/static/media/conceptions.f21dd0f534ccd04e7a25.jpg",
     "static/media/history.jpg": "/aasztokholm/static/media/history.66ed2118a4160b5e0734.jpg",
@@ -12,11 +14,11 @@
     "static/media/lonely.png": "/aasztokholm/static/media/lonely.c867f79396a07140acac.png",
     "static/media/aalogo.svg": "/aasztokholm/static/media/aalogo.720e5ac34668b9411d9d860345ca1eb1.svg",
     "index.html": "/aasztokholm/index.html",
-    "main.9abc1065.css.map": "/aasztokholm/static/css/main.9abc1065.css.map",
-    "main.91d76ec0.js.map": "/aasztokholm/static/js/main.91d76ec0.js.map"
+    "main.dba4dad3.css.map": "/aasztokholm/static/css/main.dba4dad3.css.map",
+    "main.d13f97e5.js.map": "/aasztokholm/static/js/main.d13f97e5.js.map"
   },
   "entrypoints": [
-    "static/css/main.9abc1065.css",
-    "static/js/main.91d76ec0.js"
+    "static/css/main.dba4dad3.css",
+    "static/js/main.d13f97e5.js"
   ]
 }
