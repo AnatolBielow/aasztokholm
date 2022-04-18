@@ -1,25 +1,36 @@
-import { Title, City, AddressWrapper, Street, Data, Time, Mapa, FirstWrapper, SecondWrapper } from "./Meetings.styled"
+import meeting from "../../Images/meeting.jpg";
+import { BasicMap } from "../../Map/BasicMap";
 
-export const Meetings = () => {
-    return (
-        <div>
-            <Title>Mityngi AA</Title>
-            <FirstWrapper>
-                <AddressWrapper>
-                <City>Sztokholm</City>
-                 <Street>Karlbergsvägen 32B</Street>
-                <Data>Niedziela: <Time>20:00</Time></Data>   
-                </AddressWrapper>
-                <Mapa>Mapa</Mapa>
-            </FirstWrapper>
-            <SecondWrapper>
-                <AddressWrapper>
-                <City>Vendelsö</City>
-                 <Street>Vendelsömalmsvägen 200</Street>
-                <Data>Sobota: <Time>19:00</Time></Data>   
-                </AddressWrapper>
-                <Mapa>Mapa</Mapa>
-            </SecondWrapper>
-        </div>
-    )
-}
+import {
+  Title,
+  City,
+  AddressWrapper,
+  Street,
+  Date,
+  Time,
+  AddressContainer,
+  Section,
+  MapContainer,
+} from "./Meetings.styled";
+
+export const Meetings = ({addresses}) => {
+  return (
+    <Section img={meeting}>
+      <Title>Mityngi AA</Title>
+      {addresses.map((address, index) => (
+        <AddressWrapper key={index}>
+          <AddressContainer>
+            <City>{address.city}</City>
+            <Street>{address.street}</Street>
+            <Date>
+              {address.date}: <Time>{address.time}</Time>
+            </Date>
+          </AddressContainer>
+          <MapContainer>
+            <BasicMap center={address.coordinate} popup={address.popup} />
+          </MapContainer>
+        </AddressWrapper>
+      ))}
+    </Section>
+  );
+};

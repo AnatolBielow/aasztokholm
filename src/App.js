@@ -1,22 +1,36 @@
-import { menu } from "./Helpers/menu";
-import { number } from "./Helpers/number";
-import { GlobalStyle } from "./GlobalStyle.js";
-import { theme } from "./Helpers/theme";
-import { ThemeProvider } from "styled-components";
-import { about } from "./Helpers/about";
-import { cards } from "./Helpers/cards";
-import { Wave } from "./Components/Wave/Wave";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import { Layout } from "./Components/Layout/Layout";
-import { Home } from "./Components/Pages/Home";
-import { Events } from "./Components/Pages/Events";
-import { Build } from "./Components/Pages/Build/Build";
-import { Steps } from "./Components/Pages/Steps";
-import { Traditions } from "./Components/Pages/Traditions";
-import { Conceptions } from "./Components/Pages/Conceptions";
-import { History } from "./Components/Pages/History";
-import { Meetings } from "./Components/Pages/Meetings/Meetings";
-// import { Steps } from "./Components/Pages/Steps/Steps";
+import { Layout } from "./Components/Layout/";
+import { GlobalStyle } from "./GlobalStyle.js";
+import { ThemeProvider } from "styled-components";
+import {
+  about,
+  cards,
+  contact,
+  menu,
+  addresses,
+  theme,
+  conceptions,
+  events,
+  steps,
+  traditions,
+} from "./Helpers";
+import {
+  Home,
+  Events,
+  Steps,
+  Traditions,
+  Conceptions,
+  History,
+  Meetings,
+  Contact
+} from "./Components/Pages";
+import { Wave } from "./Components/Wave/";
+
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { Questionnaire } from "./Components/Questionnaire/Questionnaire";
+import { limit, questionnaire } from "./Helpers/questionnaire";
+
 
 function App() {
   return (
@@ -26,22 +40,31 @@ function App() {
         <Wave />
         <Routes>
           <Route path="/" element={<Layout menu={menu} />}>
-            <Route path="*" element={<Navigate to="/" />} />
             <Route
               index
-              element={<Home number={number} about={about} cards={cards} />}
+              element={
+                <Home number={contact.number} about={about} cards={cards} />
+              }
             />
             <Route path="about" element={<Navigate to="/" />} />
-            <Route path="steps" element={<Steps />} />
-            <Route path="traditions" element={<Traditions />} />
-            <Route path="conceptions" element={<Conceptions />} />
+            <Route path="steps" element={<Steps steps={steps}/>} />
+            <Route path="traditions" element={<Traditions traditions={traditions}/>} />
+            <Route
+              path="conceptions"
+              element={<Conceptions conceptions={conceptions} />}
+            />
             <Route path="history" element={<History />} />
-            <Route path="questionnaire" element={<Build />} />
-            <Route path="meetings" element={<Meetings />} />
-            <Route path="events" element={<Events />} />
-            <Route path="contacts" element={<Build />} />
+            <Route path="questionnairy" element={<Questionnaire items={questionnaire} limit={limit}/>} />
+            <Route
+              path="meetings"
+              element={<Meetings addresses={addresses} />}
+            />
+            <Route path="events" element={<Events events={events} />} />
+            <Route path="contacts" element={<Contact contact={contact}/>} />
+            <Route path="*" element={<Navigate to='/'/>}/>
           </Route>
         </Routes>
+        <ToastContainer/>
       </ThemeProvider>
     </BrowserRouter>
   );

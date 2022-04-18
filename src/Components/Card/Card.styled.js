@@ -6,8 +6,13 @@ max-width: 400px;
 height: 250px;
 margin: 0 auto;
 padding: 15px;
--webkit-box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.7); 
+border-radius: 5px;
+-webkit-box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.4); 
 box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.4);
+transition: scale 250ms ease-in-out;
+&:hover, &:focus {
+    scale: 1.05
+}
 `
 export const HeaderWrapper = styled.div` 
 display: flex ;
@@ -22,8 +27,11 @@ align-items: center;
 justify-content: center;
 color: ${theme.primaryBackground};
 background-color: ${theme.accent};
+transition: background-color 250ms ease-in-out;
+transition: color 250ms ease-in-out;;
 &:hover, &:focus {
-    background-color:${theme.accent2}
+    background-color:${theme.accent2};
+    color: white;
 }
 `
 export const Title = styled.h3` 

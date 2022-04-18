@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const SectionStyled = styled.section`
   padding: 15px;
-
+  gap: 15px;
   background: linear-gradient(
       to bottom,
       rgba(255, 255, 255, 1),
@@ -17,6 +17,35 @@ export const SectionStyled = styled.section`
     flex-direction: row-reverse;
   }
 `;
+
+export const AboutSection = styled.section` 
+padding: 15px;
+@media (min-width: 1200px) {
+    display: flex;
+    justify-content: space-around;
+  }
+`
+export const Copyright = styled.p` 
+font-style: italic;
+padding-top: 1rem;
+text-align: end;
+`
+export const AboutTitle = styled.h2`
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  @media(min-width:1200px) {
+   bottom: 15px;
+   left: 15px;
+   font-size: 3rem;
+
+  }
+`;
+
 export const PageTitle = styled.h2`
   display: block;
   box-sizing: border-box;
@@ -27,10 +56,10 @@ export const PageTitle = styled.h2`
   text-align: center;
   @media (min-width: 1200px) {
     margin-top: 200px;
-
     font-size: 6rem;
   }
 `;
+
 export const List = styled.ul`
   display: block;
 
@@ -57,11 +86,7 @@ export const HistoryContent = styled.div`
     width: calc(100vw / 2);
   }
 `;
-export const Title = styled.h2`
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 700;
-`;
+
 
 export const SecondTitle = styled.h3`
   margin-top: 20px;
@@ -79,13 +104,16 @@ export const Content = styled.p`
 `;
 
 export const ImageContainer = styled.div`
-  width: 100%;
+  position: relative;
+  width: calc(100vw-30px);
+  height: calc(100vw/1.63);
   overflow: hidden;
+  background-image: url(${(props) => props.img});
+  background-size: cover;
   border-top-left-radius: 25vw;
   border-bottom-right-radius: 25vw;
   margin-top: 25px;
   @media (min-width: 1200px) {
-    display: block;
     width: calc(100vw / 2 - 50px);
     height: auto;
     border-top-left-radius: 200px;

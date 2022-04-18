@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const CardList = styled.ul` 
-display: block;
 padding: 15px;
 margin: 0 auto;
 @media (min-width: 767px) {
@@ -14,9 +13,8 @@ margin: 0 auto;
 }
 `
 export const CardItem = styled.li` 
-display: block;
 margin: 0 auto;
-margin-top: 15px;
+margin-top: 30px;
 
 
 

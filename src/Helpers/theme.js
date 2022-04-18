@@ -1,9 +1,4 @@
 export const theme = {
-    // primaryDark: '#140f07',
-    // secondaryDark: '#2f536d',
-    // primaryLight: '#f3fbff',
-    // secondaryLight: '#eaf5fb',
-    // primaryHover: '#08a3ff',
     accent: '#0000ff',
     accent2: '#3f3ff7',
     primaryDark: '#002db3',

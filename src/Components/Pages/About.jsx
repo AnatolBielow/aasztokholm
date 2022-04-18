@@ -1,19 +1,26 @@
-import { Content, SectionStyled, SecondTitle, Title,ImageContainer, ContentWrapper } from "./Page.styled";
-import image from '../Images/sunset.jpg'
+import {
+  Content,
+  AboutSection,
+  SecondTitle,
+  AboutTitle,
+  ImageContainer,
+  ContentWrapper,
+  Copyright,
+} from "./Page.styled";
+import image from "../Images/sunset.jpg";
 
-
-export const About = ({item}) => {
-  const { title, secondTitle, content} = item;
+export const About = ({ item }) => {
+  const { title, secondTitle, content, copywrite } = item;
   return (
-    <SectionStyled>
-      <ContentWrapper>
-       <Title>{title}</Title>
-      <SecondTitle>{secondTitle}</SecondTitle>
-      <Content>{content}</Content> 
-      </ContentWrapper>
-      <ImageContainer>
-            <img src={image} alt={secondTitle}></img>
+    <AboutSection>
+      <ImageContainer img={image}>
+        <AboutTitle>{title}</AboutTitle>
       </ImageContainer>
-    </SectionStyled>
+      <ContentWrapper>
+        <SecondTitle>{secondTitle}</SecondTitle>
+        <Content>{content}</Content>
+        <Copyright>{copywrite}</Copyright>
+      </ContentWrapper>
+    </AboutSection>
   );
 };

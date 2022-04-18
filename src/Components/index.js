@@ -1,6 +1,0 @@
-export * from './Footer'
-export * from './Hamburger'
-export * from './Header'
-export * from './Menu'
-export * from './Hero'
-export * from './Wave'

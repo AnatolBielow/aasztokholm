@@ -5,7 +5,7 @@ $color-animation-left--three: #d9f5ff;
 @mixin wave {
     position: absolute;
     z-index: -1;
-    top: -1650px;
+    top: -1700px;
     left: calc((100% - 1800px)/2);
     background: $color-animation-left--one;
     width: 1800px;

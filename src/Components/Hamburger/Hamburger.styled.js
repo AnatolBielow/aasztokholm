@@ -15,7 +15,7 @@ export const HamburgerStyled = styled.button`
     height: 2rem;
     justify-content: space-around;
     flex-flow: column nowrap;
-    z-index: 10;
+    z-index: 9999;
     background: transparent;
     border: none;
     &:focus {
@@ -33,7 +33,7 @@ div{
   background-color: ${({ theme }) => theme.primaryText};
   position: relative;
   transform-origin: 1px;
-  transition: all 0.3s linear;
+  transition: all 0.4s linear;
 
   :first-child {
     transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
