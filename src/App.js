@@ -30,7 +30,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Questionnaire } from "./Components/Questionnaire/Questionnaire";
 import { limit, questionnaire } from "./Helpers/questionnaire";
-
+import ScrollToTop from "./Helpers/ScrollToTop";
 
 function App() {
   return (
@@ -38,7 +38,9 @@ function App() {
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Wave />
+        <ScrollToTop>
         <Routes>
+          
           <Route path="/" element={<Layout menu={menu} />}>
             <Route
               index
@@ -63,7 +65,9 @@ function App() {
             <Route path="contacts" element={<Contact contact={contact}/>} />
             <Route path="*" element={<Navigate to='/'/>}/>
           </Route>
+         
         </Routes>
+         </ScrollToTop>
         <ToastContainer/>
       </ThemeProvider>
     </BrowserRouter>

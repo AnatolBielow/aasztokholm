@@ -9,7 +9,7 @@ import ComentaryForm from "../../ComentaryForm/ComentaryForm";
 import { Form } from "../../ComentaryForm/ComentaryForm.styled";
 import { contactPhone, contactMail } from "../../Images/Icons";
 
-export const Contact = ({ contact }) => {
+export const Contact = (props,{ contact }) => {
   const { number, email } = contact;
   return (
     <Section img={image}>

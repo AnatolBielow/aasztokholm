@@ -13,7 +13,7 @@ import {
   MapContainer,
 } from "./Meetings.styled";
 
-export const Meetings = ({addresses}) => {
+export const Meetings = (props,{addresses}) => {
   return (
     <Section img={meeting}>
       <Title>Mityngi AA</Title>

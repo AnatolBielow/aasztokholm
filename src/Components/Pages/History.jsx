@@ -4,7 +4,7 @@ import {
     SectionStyled,   
   } from "./Page.styled";
  import img from '../Images/history.jpg';
-  export const History = () => {
+  export const History = (props) => {
     return (
       <SectionStyled img={img}>
         <PageTitle>Historia AA</PageTitle>

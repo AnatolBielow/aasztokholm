@@ -3,7 +3,7 @@ import image from '../Images/newspaper.jpg'
 
 const title = "Wydarzenia Gruppy AA"
 
-        export const Events = ({events}) => {
+        export const Events = (props,{events}) => {
             return <Page title={title} img={image} items={events} />;
           };
   

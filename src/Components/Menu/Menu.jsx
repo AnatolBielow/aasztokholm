@@ -6,14 +6,16 @@ import {
   Overlay,
   MenuWrapper,
 } from "./Menu.styled";
+//  import { useHistory } from "react-router-dom";
 
 export const Menu = ({ items, open, setOpen }) => {
+// let history = useHistory();
   const handleBackdropClick = (e) => {
     if (e.currentTarget === e.target) {
       setOpen(!open);
     }
   };
-
+ 
   const handleClick = (e) => {
     if (open && e.currentTarget === e.target) {
       setOpen(!open)
@@ -30,6 +32,7 @@ export const Menu = ({ items, open, setOpen }) => {
             </NavigationItem>
           ))}
         </NavigationList>
+        {/* <button onClick={() => history.goBack()}>Back</button> */}
       </Navigation>
     </MenuWrapper>
   );

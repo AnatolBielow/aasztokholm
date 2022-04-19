@@ -18,7 +18,7 @@ import {
 import image from "../Images/question.jpg";
 import { positive, warning, notAllAnswers } from "../../Helpers/questionnaire";
 
-export const Questionnaire = ({ items, limit }) => {
+export const Questionnaire = (props,{ items, limit }) => {
   const [status, setStatus] = useState("edle");
   const [summa, setSumma] = useState(0)
   const handleSubmit = (values) => {
