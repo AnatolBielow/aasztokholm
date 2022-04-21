@@ -3,7 +3,7 @@ import image from '../Images/tradition.jpg'
 
 const title = "12 Tradycji AA"
 
-        export const Traditions = (props,{traditions}) => {
+        export const Traditions = ({traditions}) => {
             return <Page title={title} img={image} items={traditions} />;
           };
   

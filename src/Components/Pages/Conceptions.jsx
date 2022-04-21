@@ -3,7 +3,7 @@ import image from '../Images/conceptions.jpg'
 
 const title = "12 Koncepcji AA"
 
-        export const Conceptions = (props,{conceptions}) => {
+        export const Conceptions = ({conceptions}) => {
             return <Page title={title} img={image} items={conceptions} />;
           };
   

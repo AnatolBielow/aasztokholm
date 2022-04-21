@@ -1,9 +1,9 @@
 import { Page } from './Page';
 import image from '../Images/newspaper.jpg'
 
-const title = "Wydarzenia Gruppy AA"
+const title = "Wydarzenia Intergrupy AA"
 
-        export const Events = (props,{events}) => {
+        export const Events = ({events}) => {
             return <Page title={title} img={image} items={events} />;
           };
   

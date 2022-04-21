@@ -9,7 +9,7 @@ import ComentaryForm from "../../ComentaryForm/ComentaryForm";
 import { Form } from "../../ComentaryForm/ComentaryForm.styled";
 import { contactPhone, contactMail } from "../../Images/Icons";
 
-export const Contact = (props,{ contact }) => {
+export const Contact = ({ contact }) => {
   const { number, email } = contact;
   return (
     <Section img={image}>
@@ -17,8 +17,8 @@ export const Contact = (props,{ contact }) => {
       <ContactWrapper>
         <ContactContainer>
           <div>
-            Dyżury pełnimy od poniedziałku do piątku w godz. 19.00-21.00 oraz
-            soboty i niedziele w godz. 17.00 – 21.00
+            Dyżury pełnimy od poniedziałku do piątku w godz. 18.00-22.00 oraz
+            soboty i niedziele w godz. 9.00 – 22.00
           </div>
           <div>
             <p>Możesz do nas zadzwonić</p>

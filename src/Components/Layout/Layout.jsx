@@ -4,7 +4,7 @@ import { useState } from "react";
 import { Outlet } from "react-router-dom";
 import { Footer } from "../Footer";
 
-export const Layout = (props,{ menu }) => {
+export const Layout = ({ menu }) => {
   const [open, setOpen] = useState(false);
   return (
     <>
