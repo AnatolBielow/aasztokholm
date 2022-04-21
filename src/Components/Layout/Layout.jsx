@@ -11,7 +11,7 @@ export const Layout = (props,{ menu }) => {
       <Header items={menu} open={open} setOpen={setOpen} />
       <Hamburger open={open} setOpen={setOpen} />
       <Outlet />
-      <Footer items="INTERGRUPPA AA SZTOKHOLM" />
+      <Footer items="INTERGRUPA AA SZTOKHOLM" />
     </>
   );
 };
