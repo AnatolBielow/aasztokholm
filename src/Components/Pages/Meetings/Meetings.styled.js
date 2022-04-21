@@ -54,7 +54,18 @@ export const City = styled.p`
   font-weight: 700;
   text-transform: uppercase;
 `;
-
+export const GroupName = styled.p` 
+font-size: 1.5rem;
+margin-top: 1rem;
+`
+export const OpenDayTitle = styled.p` 
+font-size: 1.2rem;
+margin-top: 1.5rem;
+`
+export const OpenDay = styled.p` 
+font-size: 1.2rem;
+margin-top: 1rem;
+`
 export const Street = styled.p`
   font-size: 1.5rem;
   letter-spacing: 0.03rem;

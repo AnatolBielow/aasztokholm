@@ -49,7 +49,7 @@ export const limit = 5;
 
 export const positive = ({ summa }) => (
   <p>
-    Twój wynik to {summa} odpowiedzi twierdzące. Analiza spożycia alkoholu
+    Twój wynik to {summa} odpowiedzi twierdzących. Analiza spożycia alkoholu
     wskazują obecnie na picie o niskim poziomie ryzyka. Warto obserwować swoje
     picie, intencje sięgania po alkohol i reakcje swojego organizmu oraz zmiany
     wzorca picia.
@@ -58,7 +58,7 @@ export const positive = ({ summa }) => (
 
 export const warning = ({ summa }) => (
   <p>
-    Twój wynik to {summa} odpowiedzi twierdzące. Wynik {limit} punktów albo
+    Twój wynik to {summa} odpowiedzi twierdzących. Wynik {limit} punktów albo
     więcej sugeruje uzależnienie. Ten test nie jest podstawą stuprocentowej
     diagnozy uzależnienia od alkoholu, jednak koniecznie sprawdź podejrzenie
     uzależnienia udając się do specjalistów pracujących w poradniach terapii
