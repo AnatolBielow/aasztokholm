@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/aasztokholm/static/css/main.dba4dad3.css",
-    "main.js": "/aasztokholm/static/js/main.fe454dcd.js",
+    "main.js": "/aasztokholm/static/js/main.e85de989.js",
     "static/media/mountain.jpg": "/aasztokholm/static/media/mountain.cb23183910f22cab753e.jpg",
     "static/media/build.jpg": "/aasztokholm/static/media/build.9cf4799e3099add5cc13.jpg",
     "static/media/newspaper.jpg": "/aasztokholm/static/media/newspaper.f37d7db124ecead03c14.jpg",
@@ -16,10 +16,10 @@
     "static/media/aalogo.svg": "/aasztokholm/static/media/aalogo.720e5ac34668b9411d9d860345ca1eb1.svg",
     "index.html": "/aasztokholm/index.html",
     "main.dba4dad3.css.map": "/aasztokholm/static/css/main.dba4dad3.css.map",
-    "main.fe454dcd.js.map": "/aasztokholm/static/js/main.fe454dcd.js.map"
+    "main.e85de989.js.map": "/aasztokholm/static/js/main.e85de989.js.map"
   },
   "entrypoints": [
     "static/css/main.dba4dad3.css",
-    "static/js/main.fe454dcd.js"
+    "static/js/main.e85de989.js"
   ]
 }
