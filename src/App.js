@@ -56,7 +56,7 @@ function App() {
               element={<Conceptions conceptions={conceptions} />}
             />
             <Route path="history" element={<History />} />
-            <Route path="questionnairy" element={<Questionnaire items={questionnaire} limit={limit}/>} />
+            <Route path="questionnaire" element={<Questionnaire items={questionnaire} limit={limit}/>} />
             <Route
               path="meetings"
               element={<Meetings addresses={addresses} />}

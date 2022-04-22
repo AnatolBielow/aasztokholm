@@ -40,9 +40,10 @@ export const Overlay = styled.div`
   left: 0;
   display: flex;
   background-color: #00000080;
+  transform: scale(${({ open }) => (open ? 1 : 0)});
   opacity: ${({ open }) => (open ? 1 : 0)};
   transition: opacity 0.4s ease-in-out;
-  scale: ${({ open }) => (open ? 1 : 0)};
+ 
 
 `;
 export const NavigationList = styled.ul`

@@ -32,7 +32,7 @@ export const Menu = ({ items, open, setOpen }) => {
             </NavigationItem>
           ))}
         </NavigationList>
-        {/* <button onClick={() => history.goBack()}>Back</button> */}
+     
       </Navigation>
     </MenuWrapper>
   );

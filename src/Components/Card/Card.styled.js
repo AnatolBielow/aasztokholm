@@ -9,9 +9,9 @@ padding: 15px;
 border-radius: 5px;
 -webkit-box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.4); 
 box-shadow: 0px 4px 11px 1px rgba(0,0,0,0.4);
-transition: scale 250ms ease-in-out;
+transition: all 250ms ease-in-out;
 &:hover, &:focus {
-    scale: 1.05
+    transform: scale(1.05)
 }
 `
 export const HeaderWrapper = styled.div` 

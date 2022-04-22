@@ -4,6 +4,7 @@ export const HeaderStyled = styled.header`
   display: flex;
   font-size: calc(10px + 2vmin);
   color: white;
+  height: 154px;
 `;
 
 export const Logo = styled.img` 
