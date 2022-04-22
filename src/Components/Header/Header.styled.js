@@ -5,6 +5,7 @@ export const HeaderStyled = styled.header`
   font-size: calc(10px + 2vmin);
   color: white;
   height: 154px;
+  width: 100%;
 `;
 
 export const Logo = styled.img` 
