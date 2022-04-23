@@ -32,7 +32,7 @@ export const cards = [
     icon: history,
   },
   {
-    id: "questionnairy",
+    id: "questionnaire",
     title: "Czy AA jest dla mnie?",
     prev: "Oto niektóre z pytań, na które próbowaliśmy odpowiedzieć. Odpowiedzi te mogły ukazać nam, że mamy poważny problem z naszym piciem.",
     icon: user,
