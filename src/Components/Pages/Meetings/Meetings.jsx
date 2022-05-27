@@ -1,4 +1,5 @@
 import { popup } from "leaflet";
+import { BackButton } from "../../BackButton";
 import meeting from "../../Images/meeting.jpg";
 import { BasicMap } from "../../Map/BasicMap";
 
@@ -15,12 +16,14 @@ import {
   GroupName,
   OpenDay,
   OpenDayTitle,
+  Link,
 } from "./Meetings.styled";
 
 export const Meetings = ({addresses}) => {
   return (
     <Section img={meeting}>
       <Title>Mityngi AA</Title>
+      
       {addresses.map((address, index) => (
         <AddressWrapper key={index}>
           <AddressContainer>
@@ -39,6 +42,8 @@ export const Meetings = ({addresses}) => {
           </MapContainer>
         </AddressWrapper>
       ))}
+      <Link href="https://spis.aa.org.pl/index.php/meetings/?tsml-day=any&tsml-region=szwecja">Spis Mityngów</Link>
+      <BackButton/>
     </Section>
   );
 };

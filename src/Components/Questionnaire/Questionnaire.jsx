@@ -15,9 +15,11 @@ import {
   Positive
 } from "./Questionnaire.styled";
 import image from "../Images/question.jpg";
-import { positive, warning, notAllAnswers } from "../../Helpers/questionnaire";
+import { positive, warning, notAllAnswers, questions, limit } from "../../Helpers/questionnaire";
+import { BackButton } from "../BackButton";
 
-export const Questionnaire = ({ items, limit }) => {
+export const Questionnaire = () => {
+  
   const [status, setStatus] = useState("edle");
   const [summa, setSumma] = useState(0)
   const handleSubmit = (values) => {
@@ -27,7 +29,7 @@ export const Questionnaire = ({ items, limit }) => {
     for (let i = 0; i < nuevo.length; i++) {
       sum += nuevo[i];
     }
-    if (items.length > nuevo.length) {
+    if (questions.length > nuevo.length) {
       setSumma(sum)
       return setStatus("notAllAnsvers");
     }
@@ -60,7 +62,7 @@ export const Questionnaire = ({ items, limit }) => {
             <Form>
               
               <ul>
-                {items.map((item, index) => (
+                {questions.map((item, index) => (
                   <Item key={index}>
                     <div id={index}>
                       <p>
@@ -100,6 +102,7 @@ export const Questionnaire = ({ items, limit }) => {
             </QuestionnaireWrapper>
           )}
         </Formik>
+        <BackButton/>
       </div>
     </Section>
   );

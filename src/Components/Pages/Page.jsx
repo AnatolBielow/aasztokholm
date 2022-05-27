@@ -1,3 +1,4 @@
+import { BackButton } from "../BackButton";
 import {
   ContentWrapper,
   PageTitle,
@@ -19,6 +20,7 @@ export const Page = ({ title, items, img }) => {
             </li>
           ))}
         </List>
+        <BackButton/>
       </ContentWrapper>
     </SectionStyled>
   );

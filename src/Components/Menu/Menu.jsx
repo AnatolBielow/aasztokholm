@@ -1,3 +1,6 @@
+import { useState } from "react";
+import { menu } from "../../Helpers";
+import { Hamburger } from "../Hamburger";
 import {
   NavigationList,
   Navigation,
@@ -6,10 +9,9 @@ import {
   Overlay,
   MenuWrapper,
 } from "./Menu.styled";
-//  import { useHistory } from "react-router-dom";
 
-export const Menu = ({ items, open, setOpen }) => {
-// let history = useHistory();
+export const Menu = () => {
+  const [open, setOpen] = useState(false)
   const handleBackdropClick = (e) => {
     if (e.currentTarget === e.target) {
       setOpen(!open);
@@ -23,10 +25,12 @@ export const Menu = ({ items, open, setOpen }) => {
   }
   return (
     <MenuWrapper>
+      <Hamburger open={open} setOpen={setOpen}/>
       <Overlay open={open} onClick={handleBackdropClick} />
       <Navigation open={open}>
+      
         <NavigationList>
-          {items.map((item) => (
+          {menu.map((item) => (
             <NavigationItem key={item.id}>
               <Link to={item.id} onClick={handleClick}>{item.value}</Link>
             </NavigationItem>

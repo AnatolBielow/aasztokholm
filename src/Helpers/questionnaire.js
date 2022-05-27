@@ -1,4 +1,4 @@
-export const questionnaire = [
+export const questions= [
   {
     question:
       "Czy zdarzyło się kiedykolwiek, że ktoś z Twojego bliskiego otoczenia zwrócił Ci uwagę, że za dużo pijesz?",

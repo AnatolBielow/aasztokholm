@@ -9,3 +9,4 @@ export * from "./history";
 export * from "./menu";
 export * from "./steps";
 export * from "./traditions";
+export * from "./questionnaire";

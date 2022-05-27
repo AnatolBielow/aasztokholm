@@ -8,9 +8,11 @@ import {
   Copyright,
 } from "./Page.styled";
 import image from "../Images/sunset.jpg";
+import { about } from "../../Helpers";
 
-export const About = ({ item }) => {
-  const { title, secondTitle, content, copywrite } = item;
+
+export const About = () => {
+  const { title, secondTitle, content, copywrite } = about;
   return (
     <AboutSection>
       <ImageContainer img={image}>

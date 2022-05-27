@@ -2,11 +2,11 @@ import { Menu } from "../Menu";
 import logo from "./aalogo.svg";
 import { HeaderStyled, Logo} from "./Header.styled";
  
-export const Header = ({ items, open, setOpen }) => {
+export const Header = () => {
   return (
     <HeaderStyled>
       <Logo src={logo} alt="logo" />
-      <Menu items={items} open={open} setOpen={setOpen} />
+      <Menu />
     </HeaderStyled>
   );
 };

@@ -54,18 +54,18 @@ export const City = styled.p`
   font-weight: 700;
   text-transform: uppercase;
 `;
-export const GroupName = styled.p` 
-font-size: 1.5rem;
-margin-top: 1rem;
-`
-export const OpenDayTitle = styled.p` 
-font-size: 1.2rem;
-margin-top: 1.5rem;
-`
-export const OpenDay = styled.p` 
-font-size: 1.2rem;
-margin-top: 1rem;
-`
+export const GroupName = styled.p`
+  font-size: 1.5rem;
+  margin-top: 1rem;
+`;
+export const OpenDayTitle = styled.p`
+  font-size: 1.2rem;
+  margin-top: 1.5rem;
+`;
+export const OpenDay = styled.p`
+  font-size: 1.2rem;
+  margin-top: 1rem;
+`;
 export const Street = styled.p`
   font-size: 1.5rem;
   letter-spacing: 0.03rem;
@@ -91,5 +91,28 @@ export const MapContainer = styled.div`
   @media (min-width: 767px) {
     width: 500px;
     height: 350px;
+  }
+`;
+
+export const Link = styled.a`
+  display: block;
+  width: fit-content;
+  box-sizing: border-box;
+  padding: 15px;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  margin: 30px auto 0 auto;
+  background-color: ${({ theme }) => theme.accent};
+  -webkit-box-shadow: 0px 4px 11px 1px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 4px 11px 1px rgba(0, 0, 0, 0.4);
+  transition: all 200ms ease-in-out;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    background-color: ${({ theme }) => theme.accent2};
+    -webkit-box-shadow: 0px 4px 11px 1px rgba(0, 0, 0, 0);
+    box-shadow: 0px 4px 11px 1px rgba(0, 0, 0, 0);
   }
 `;

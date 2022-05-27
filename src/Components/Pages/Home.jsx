@@ -2,11 +2,11 @@ import { About } from "../Pages/About";
 import { CardSection } from "../CardSection/";
 import { Hero } from "../Hero";
 
-export const Home = ({ number, about, cards }) => {
+export const Home = () => {
   return (
     <>
-      <Hero number={number} />
-      <About item={about} />
-      <CardSection items={cards} />
+      <Hero />
+      <About  />
+      <CardSection />
     </>  );
 };

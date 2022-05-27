@@ -1,8 +1,10 @@
+import { contact } from "../../Helpers";
 import { phone } from "../Images/Icons";
 import image from "../Images/lonely.png";
 import { CallMe, PhoneContainer, Title, ImageContainer, HeroContainer } from "./Hero.styled";
 
-export const Hero = ({ number }) => {
+export const Hero = () => {
+  const {number} = contact
   return (
     <HeroContainer>
       <PhoneContainer>

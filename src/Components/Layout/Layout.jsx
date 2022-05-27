@@ -1,17 +1,13 @@
-import { Header } from "../Header";
-import { Hamburger } from "../Hamburger";
-import { useState } from "react";
 import { Outlet } from "react-router-dom";
-import { Footer } from "../Footer";
-
-export const Layout = ({ menu }) => {
-  const [open, setOpen] = useState(false);
+import { Header } from "../Header/Header";
+import {Footer} from '../Footer'
+function Layout() {
   return (
     <>
-      <Header items={menu} open={open} setOpen={setOpen} />
-      <Hamburger open={open} setOpen={setOpen} />
+      <Header />
       <Outlet />
-      <Footer items="INTERGRUPA AA SZTOKHOLM" />
+      <Footer />
     </>
   );
-};
+}
+export default Layout;

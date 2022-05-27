@@ -4,6 +4,7 @@ import {
     SectionStyled,   
   } from "./Page.styled";
  import img from '../Images/history.jpg';
+import { BackButton } from "../BackButton";
   export const History = () => {
     return (
       <SectionStyled img={img}>
@@ -22,6 +23,7 @@ import {
                 <p>Wspólnota Anonimowych Alkoholików rozwijała się szybko, jednakże w miarę rozwoju pojawiało się wiele problemów, takich jak np. członkostwo, zdobywanie i podział pieniędzy, stosunki międzyludzkie, kierowanie grupami, reprezentacja na zewnątrz. Z tych burzliwych, a czasem nawet smutnych doświadczeń, powstało Dwanaście Tradycji AA opublikowanych w 1946 roku i ostatecznie zaakceptowanych przez Wspólnotę w 1950 roku.</p>
 
         </HistoryContent>
+        <BackButton/>
       </SectionStyled>
     );
   };
