@@ -29,22 +29,22 @@ function App() {
           <Routes>
             <Route path="/" element={<Layout />}>
               <Route index element={<Home />} />
-              <Route path="about" element={<Navigate to="/" />} />
-              <Route path="steps" element={<Steps />} />
-              <Route path="traditions" element={<Traditions />} />
-              <Route path="conceptions" element={<Conceptions />} />
-              <Route path="history" element={<History />} />
+              <Route path="/about" element={<Navigate to="/" />} />
+              <Route path="/steps" element={<Steps />} />
+              <Route path="/traditions" element={<Traditions />} />
+              <Route path="/conceptions" element={<Conceptions />} />
+              <Route path="/history" element={<History />} />
               <Route
-                path="questionnaire"
+                path="/questionnaire"
                 element={<Questionnaire/>}
               />
               <Route
-                path="meetings"
+                path="/meetings"
                 element={<Meetings addresses={addresses} />}
               />
-              <Route path="events" element={<Events events={events} />} />
-              <Route path="contacts" element={<Contact contact={contact} />} />
-              <Route path="*" element={<Navigate to="/" />} />
+              <Route path="/events" element={<Events events={events} />} />
+              <Route path="/contacts" element={<Contact contact={contact} />} />
+              <Route path="*" element={<Home/>} />
             </Route>
           </Routes>
         </ScrollToTop>
