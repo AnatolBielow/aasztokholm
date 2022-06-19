@@ -42,7 +42,7 @@ export const Meetings = ({addresses}) => {
           </MapContainer>
         </AddressWrapper>
       ))}
-      <Link href="https://spis.aa.org.pl/index.php/meetings/?tsml-day=any&tsml-region=szwecja">Spis Mityngów</Link>
+      <Link href="https://spis.aa.org.pl/index.php/meetings/?tsml-day=any&tsml-region=szwecja">Spis Mityngów w Szwecji</Link>
       <BackButton/>
     </Section>
   );
